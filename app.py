@@ -2,7 +2,8 @@
 #name: TCHANGMENA A NKEN ALLASSAN
 #Date: 27/05/2020
 #WedOO.ai first project
-#I will make it code challenge
+
+
 import os , sys
 from flask import Flask, request
 from pymessenger import Bot,Button
@@ -13,7 +14,7 @@ import pymongo
 from utils import wit_response
 from wit import Wit
 from twilio.rest import Client
-access_token="JFNNF2ZMZNSA2BAT3VVRYVFXSJPNWELC"
+access_token='your access token'#"JFNNF2ZMZNSA2BAT3VVRYVFXSJPNWELC"
 client=Wit(access_token)
 
 
