@@ -5,7 +5,7 @@ from flask import Flask, request
 app=Flask(__name__)
 @app.route('/',methods=[GET])
 def verify():
-    #webhook verification
+    # webhook verification
     if request.args.get("hub.mode")=="subscribe" and request.args.get("hub.challenge"):
         if not request.args.get("hub.verify_token")=="hello":
             return "Verification token mismatch", 403
